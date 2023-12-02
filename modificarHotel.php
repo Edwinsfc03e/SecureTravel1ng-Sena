@@ -1,5 +1,5 @@
 <?php
-// Iniciar sesión y verificar si el usuario es administrador
+// Iniciar sesión y verificar si el usuario es administradoraa
 session_start();
 if (!isset($_SESSION['usuario_id']) || !($_SESSION['es_admin'] || $_SESSION['idAdmin'] != null)) {
     header("Location: login.php");
